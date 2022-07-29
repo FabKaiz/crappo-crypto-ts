@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   margin: 60px auto;
-  padding: 0 120px;
   max-width: 1200px;
   align-self: center;
 
@@ -114,9 +113,15 @@
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .navContainer {
+    padding: 0 0px;
+    margin: 60px 64px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .navContainer {
-    padding: 0 64px;
 
     .navBtns {
       display: none;
