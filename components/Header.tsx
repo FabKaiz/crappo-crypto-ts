@@ -1,6 +1,7 @@
 import styles from '../styles/Header.module.scss'
 import headerImg from '../public/assets/headerImg.png'
 import Image from 'next/image'
+import { AiOutlineRight } from 'react-icons/ai'
 
 const Header = () => {
   return (
@@ -17,11 +18,10 @@ const Header = () => {
           Buy and sell cryptocurrencies, trusted by 10M wallets with over $30
           billion in transactions.
         </p>
-          <button className={styles.headerButton}>
-            Try for Free
-            <span>&gt;</span>
-          </button>
-
+        <button className={styles.headerButton}>
+          Try for FREE
+          <AiOutlineRight />
+        </button>
       </div>
       <div className={styles.headerRight}>
         <Image src={headerImg} alt="Crappo logo" />
