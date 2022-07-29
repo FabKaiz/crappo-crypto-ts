@@ -36,6 +36,10 @@ ul {
   font-weight: normal;
 }
 
+.sectionContainer {
+  margin: 60px auto;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -43,5 +47,17 @@ ul {
   body {
     color: white;
     background: #0d0d2b;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .sectionContainer {
+    padding: 0 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionContainer {
+    margin: 30px auto;
+    padding: 0 8px;
   }
 }
