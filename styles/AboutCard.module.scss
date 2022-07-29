@@ -1,0 +1,76 @@
+.aboutCardContainer {
+  display: flex;
+  align-items: center;
+  min-width: 270px;
+}
+
+.aboutCardLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #3671e9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.aboutCardText {
+  margin-left: 24px;
+
+  h4 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #e0e0e0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1228px) {
+  .aboutCardText {
+    h4 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutCardText {
+    h4 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .aboutCardLogo {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
