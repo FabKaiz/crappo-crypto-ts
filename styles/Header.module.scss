@@ -92,3 +92,58 @@
     }
   }
 }
+
+@media screen and (max-width: 1228px) {
+  .headerLeft {
+    .headerTitle {
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    .headerSubtitle {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .headerButton {
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .headerContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerLeft {
+    align-items: center;
+  }
+
+  .headerRight {
+    max-width: 70%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerLeft {
+    .headerTitle {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .headerSubtitle {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .headerButton {
+      font-size: 12px;
+      line-height: 150%;
+    }
+  }
+}
