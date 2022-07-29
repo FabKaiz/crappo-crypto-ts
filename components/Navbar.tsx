@@ -21,6 +21,7 @@ const Navbar = () => {
             <li>About</li>
             <li>Contact</li>
           </ul>
+          
         </div>
         <div className={styles.navBtns}>
           <a className={styles.loginBtn}>Login</a> |{' '}
