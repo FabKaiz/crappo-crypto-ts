@@ -18,7 +18,7 @@ const Header = () => {
           Buy and sell cryptocurrencies, trusted by 10M wallets with over $30
           billion in transactions.
         </p>
-        <button className={styles.headerButton}>
+        <button className={`mainButton`}>
           Try for FREE
           <AiOutlineRight />
         </button>

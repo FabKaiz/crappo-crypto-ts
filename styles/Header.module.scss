@@ -55,41 +55,6 @@
     max-width: 435px;
     margin-bottom: 32px;
   }
-
-  .headerButton {
-    background: #3671e9;
-    border-radius: 32px;
-    border: none;
-    padding: 18px 24px;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-
-    svg {
-      color: #3671e9;
-      background-color: #fff;
-      font-weight: bolder;
-      padding: 4px;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      margin-left: 24px;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    &:hover {
-      background: #2e5dd6;
-
-      svg {
-        transform: translateX(12px);
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1228px) {
@@ -102,11 +67,6 @@
     .headerSubtitle {
       font-size: 14px;
       line-height: 24px;
-    }
-
-    .headerButton {
-      font-size: 14px;
-      line-height: 150%;
     }
   }
 }
@@ -138,11 +98,6 @@
     .headerSubtitle {
       font-size: 12px;
       line-height: 20px;
-    }
-
-    .headerButton {
-      font-size: 12px;
-      line-height: 150%;
     }
   }
 }
