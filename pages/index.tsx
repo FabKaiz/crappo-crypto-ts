@@ -3,6 +3,7 @@ import Head from 'next/head'
 import About from '../components/About'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
+import Trade from '../components/Trade'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <Navbar />
         <Header />
         <About />
+        <Trade />
       </main>
     </div>
   )
