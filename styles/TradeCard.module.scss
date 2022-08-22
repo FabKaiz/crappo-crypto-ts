@@ -7,6 +7,8 @@
   border-radius: 16px;
   width: 370px;
   height: 433px;
+  border: 1px solid #2e5ed600;
+  transition: all 0.2s ease-in-out;
 
   p {
     font-weight: 400;
@@ -14,6 +16,7 @@
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.01em;
+    max-width: 322px;
   }
 
   h2 {
@@ -21,7 +24,38 @@
     font-size: 32px;
     line-height: 150%;
     text-align: center;
+
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+    }
   }
+
+  &:hover {
+    border: 1px solid #2e5ed627;
+  }
+}
+
+.buttonRight {
+  width: 64px;
+  height: 64px;
+  border-radius: 99px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3671e9;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #3671e9;
+    color: #fff;
+  }
+
+  border: 2px solid rgba(43, 7, 110, 0.2);
 }
 
 .darkBg {
