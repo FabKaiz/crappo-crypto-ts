@@ -3,8 +3,13 @@ import TradeCard from './TradeCard'
 import btcLogo from '../public/assets/btcLogo.png'
 import ethLogo from '../public/assets/ethLogo.png'
 import ltcLogo from '../public/assets/ltcLogo.png'
+import { MdCalculate } from 'react-icons/md'
 
 const Trade = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+  }
+
   return (
     <section className={`${styles.tradeContainer} sectionContainer`}>
       <div className={styles.tradeTop}>
@@ -16,14 +21,17 @@ const Trade = () => {
           </p>
         </div>
         <div className={styles.tradeTopCalculate}>
-          <form className={styles.calculateForm}>
+          <form className={styles.calculateForm} onSubmit={handleSubmit}>
             <input type="text" placeholder="Enter your hash rate" />
             <select name="select">
-              <option value="TH/s">TH/s</option>
-              <option value="TH/h">GH/s</option>
+              <option value="TH/s">MH/s</option>
+              <option value="TH/h">TH/s</option>
             </select>
 
-            <button>Calculate</button>
+            <button>
+              <p>Calculate</p>
+              <MdCalculate />
+            </button>
           </form>
           <div className={styles.calculateRevenue}>
             <h5>ESTIMATED 24 HOUR REVENUE:</h5>
@@ -36,38 +44,38 @@ const Trade = () => {
           </div>
         </div>
       </div>
-        <div className={styles.tradeBottom}>
-          <h2>Trade securely and market the high growth cryptocurrencies.</h2>
-          <div className={styles.tradeCardsContainer}>
-            <TradeCard
-              logo={btcLogo}
-              title={'Bitcoin'}
-              abbreviations={'BTC'}
-              description={
-                'Digital currency in which a record of transactions is maintained.'
-              }
-              active={true}
-            />
-            <TradeCard
-              logo={ethLogo}
-              title={'Ethereum'}
-              abbreviations={'ETH'}
-              description={
-                'Blockchain technology to create and run decentralized digital applications.'
-              }
-              active={false}
-            />
-            <TradeCard
-              logo={ltcLogo}
-              title={'Litecoin'}
-              abbreviations={'LTC'}
-              description={
-                'Cryptocurrency that enables instant payments to anyone in the world.'
-              }
-              active={false}
-            />
-          </div>
+      <div className={styles.tradeBottom}>
+        <h2>Trade securely and market the high growth cryptocurrencies.</h2>
+        <div className={styles.tradeCardsContainer}>
+          <TradeCard
+            logo={btcLogo}
+            title={'Bitcoin'}
+            abbreviations={'BTC'}
+            description={
+              'Digital currency in which a record of transactions is maintained.'
+            }
+            active={true}
+          />
+          <TradeCard
+            logo={ethLogo}
+            title={'Ethereum'}
+            abbreviations={'ETH'}
+            description={
+              'Blockchain technology to create and run decentralized digital applications.'
+            }
+            active={false}
+          />
+          <TradeCard
+            logo={ltcLogo}
+            title={'Litecoin'}
+            abbreviations={'LTC'}
+            description={
+              'Cryptocurrency that enables instant payments to anyone in the world.'
+            }
+            active={false}
+          />
         </div>
+      </div>
     </section>
   )
 }
