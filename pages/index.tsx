@@ -4,6 +4,7 @@ import About from '../components/About'
 import Features from '../components/Features'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
+import Newsletter from '../components/Newsletter'
 import Trade from '../components/Trade'
 import styles from '../styles/Home.module.scss'
 
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <About />
         <Trade />
         <Features />
+        <Newsletter />
       </main>
     </div>
   )
