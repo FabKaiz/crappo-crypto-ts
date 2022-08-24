@@ -37,7 +37,8 @@ ul {
 }
 
 .sectionContainer {
-  margin: 60px auto;
+  margin: 0px auto;
+  padding: 60px 0;
 }
 
 .mainButton {
@@ -99,8 +100,8 @@ ul {
 
 @media screen and (max-width: 768px) {
   .sectionContainer {
-    margin: 30px auto;
-    padding: 0 8px;
+    margin: 0px auto;
+    padding: 30px 8px;
   }
 
   .mainButton {
