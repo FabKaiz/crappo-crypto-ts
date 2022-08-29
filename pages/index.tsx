@@ -14,10 +14,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Crappo</title>
-        <meta
-          name="description"
-          content="Fastest & secure platform to invest in crypto, Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions."
-        />
+        <meta name="description" content="Fastest & secure platform to invest in crypto, Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
