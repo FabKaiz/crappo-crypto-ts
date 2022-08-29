@@ -28,7 +28,7 @@ const Feature: React.FC<FeatureProps> = ({
         <button className={`mainButton`}>Learn More</button>
       </div>
       <div className={styles.featureImg}>
-        <Image src={img} alt={alt} />
+        <Image loading="lazy" src={img} alt={alt} />
       </div>
     </div>
   )

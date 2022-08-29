@@ -19,7 +19,7 @@ const TradeCard: React.FC<TradeProps> = ({
 }) => {
   return (
     <div className={`${styles.tradeCardContainer} ${active ? styles.darkBg : styles.lightBg}`}>
-      <Image src={logo} alt={`${title} logo`} />
+      <Image loading="lazy" src={logo} alt={`${title} logo`} />
       <h2>{title} <span>{abbreviations}</span></h2>
       <p>{description}</p>
       {active ? (

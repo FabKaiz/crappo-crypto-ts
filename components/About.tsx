@@ -27,7 +27,7 @@ const About = () => {
       </div>
       <div className={styles.aboutBottom}>
         <div className={styles.aboutImg}>
-          <Image src={aboutImg} alt="about" />
+          <Image src={aboutImg} loading="lazy" alt="about" />
         </div>
         <div className={styles.aboutText}>
           <h2>Why you should choose CRAPPO</h2>
