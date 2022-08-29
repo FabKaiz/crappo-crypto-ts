@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../public/assets/Logo.png'
+import logo from '../public/assets/logo.png'
 import styles from '../styles/Navbar.module.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { useState } from 'react'
