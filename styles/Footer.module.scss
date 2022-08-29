@@ -1,0 +1,83 @@
+.footerContainer {
+  text-align: center;
+}
+
+.footerTop {
+  .footerLogo {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footerLinks {
+    margin-bottom: 1rem;
+
+    h5 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      color: #f2f2f2c5;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .footerPaymentLinks {
+    margin-top: 2rem;
+    h3 {
+      font-weight: 500;
+      font-size: 28px;
+      color: #ffffff;
+      max-width: 355px;
+    }
+
+    .footerPaymentLogo {
+      padding: 0 8px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column-reverse;
+  .footerCopyright {
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      color: #ffffff9f;
+    }
+  }
+
+  .footerSocial {
+    display: flex;
+    margin: 2rem auto 2rem;
+    width: 100%;
+    max-width: 248px;
+    justify-content: space-between;
+    svg {
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        color: rgba(242, 242, 242, 0.616);
+      }
+    }
+  }
+}
