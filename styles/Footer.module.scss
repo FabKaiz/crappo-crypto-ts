@@ -32,8 +32,8 @@
   }
 
   .footerPaymentLinks {
-    margin-top: 2rem;
     h3 {
+      margin: 2rem auto 0;
       font-weight: 500;
       font-size: 28px;
       color: #ffffff;
@@ -42,11 +42,11 @@
 
     .footerPaymentLogo {
       padding: 0 8px;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
+      margin: 1rem auto 2rem;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      max-width: 355px;
     }
   }
 }
@@ -77,6 +77,91 @@
 
       &:hover {
         color: rgba(242, 242, 242, 0.616);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footerTop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .footerLogo {
+      margin: 0;
+      padding-right: 1rem;
+    }
+
+    .footerLinks {
+      padding: 0 2rem;
+    }
+
+    .footerPaymentLinks {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .footerTop {
+    .footerLinks {
+      a {
+        font-size: 16px;
+        line-height: 38px;
+      }
+    }
+
+    .footerPaymentLinks {
+      h3 {
+        font-size: 32px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .footerBottom {
+    flex-direction: row;
+    margin: 120px auto 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .footerCopyright {
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .footerSocial {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  .footerContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 80px;
+  }
+
+  .footerTop {
+    .footerLinks {
+      text-align: left;
+    }
+
+    .footerPaymentLinks {
+      margin: 0;
+
+      h3 {
+        margin: 0;
+        margin-bottom: 40px;
+        text-align: left;
+      }
+
+      .footerPaymentLogo {
+        padding: 0;
       }
     }
   }
