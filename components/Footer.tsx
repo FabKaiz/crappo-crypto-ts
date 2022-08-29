@@ -67,9 +67,13 @@ const Footer = () => {
         <div className={styles.footerPaymentLinks}>
           <h3>We accept following payment systems</h3>
           <div className={styles.footerPaymentLogo}>
-            <Image src={visaLogo} alt="visa logo" />
-            <Image src={mastercardLogo} alt="mastercard logo" />
-            <Image src={bitcoinLogo} alt="bitcoin logo" />
+            <Image src={visaLogo} alt="visa logo" title="visa" />
+            <Image
+              src={mastercardLogo}
+              alt="mastercard logo"
+              title="Mastercard"
+            />
+            <Image src={bitcoinLogo} alt="bitcoin logo" title="Bitcoin" />
           </div>
         </div>
       </div>
